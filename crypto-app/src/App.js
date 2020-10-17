@@ -5,23 +5,11 @@ import './App.css';
 var ccxt = require ('ccxt')
 
 function App() {
-  console.log (new ccxt.kraken ()) // print all available exchanges
+  var test = new ccxt.kraken (); // print all available exchanges
+  console.log( test.loadMarkets () );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header"></header>
     </div>
   );
 }
